@@ -1,0 +1,14 @@
+extends layout.jade
+block content
+    if !files.length
+        h2 no valid files
+    else
+        header.gist-header
+            a.gist-url(href="#{gistUrl}") gist##{gistId}
+            .description= gistDescription
+        each file in files
+            section.gist
+                header.gist-title= file.filename
+                article.gist-content
+                    | !{file.html}
+

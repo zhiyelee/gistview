@@ -1,0 +1,25 @@
+{
+  "name": "gistview",
+  "version": "0.0.1",
+  "description": "nodejs version of gist.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gist",
+    "gist.io",
+    "markdown",
+    "md"
+  ],
+  "author": "zhiyelee",
+  "license": "MIT",
+  "devDependencies": {
+    "request": "~2.34.0",
+    "express": "~3.4.8",
+    "jade": "~1.3.0",
+    "when": "~2.8.0",
+    "marked": "~0.3.1",
+    "highlight.js": "~8.0.0"
+  }
+}
