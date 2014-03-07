@@ -38,14 +38,17 @@ app.get('/:gistid([0-9a-zA-Z]*)', function(req, res){
         res.render('gist', {
             gistUrl: gistInfo['html_url'],
             gistId: gistInfo['id'],
-            gistDescription: gistInfo['description'],
+            title: gistInfo['description'],
             files: mdFiles
         });
     });
 });
 
 app.get('*', function(req, res){
-        res.render('index', {siteUrl: siteConfig.siteUrl});
+    res.render('index', {
+        siteUrl: siteConfig.siteUrl,
+        title: 'gist view - by @zhiyelee'
+    });
 });
 
 app.listen(siteConfig.port);

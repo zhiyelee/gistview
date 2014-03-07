@@ -5,7 +5,7 @@ block content
     else
         header.gist-header
             a.gist-url(href="#{gistUrl}") gist##{gistId}
-            .description= gistDescription
+            .description= title
         each file in files
             section.gist
                 header.gist-title= file.filename
