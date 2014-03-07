@@ -47,7 +47,7 @@ app.get('/:gistid([0-9a-zA-Z]*)', function(req, res){
 app.get('*', function(req, res){
     res.render('index', {
         siteUrl: siteConfig.siteUrl,
-        title: 'gist view - by @zhiyelee'
+        title: 'gist view - view gist markdown files'
     });
 });
 
