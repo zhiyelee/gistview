@@ -57,6 +57,9 @@ article video { max-width:100%; }
     color:#DDD;
     border-bottom:1px dashed #ccc;
 }
+.gist .share {
+    margin-top:20px;
+}
 
 .gist-header .gist-url { color:#ccc; }
 .gist-header .gist-url:hover { color:#88C4DC; }

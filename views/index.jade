@@ -7,14 +7,15 @@ block content
             h2 Usage
             ul
                 li Create a public gist on Github with one or more Markdown-syntax files.
-                li Note the gist ID number. It’s usually a longish number like 29388372.
-                li View your writing presented nicely at #{siteUrl}/gist-id-here
+                li Note the gist ID number. It’s usually a longish number like 9403314
+                li View your writing presented nicely at
+                    a(href="#{siteUrl}/9403314") #{siteUrl}/9403314
 
             :markdown
                 This is a nodejs verison, partial copy of the [gist.io](http://gist.io), by Idan Gazit
 
                 ## Source
                 * [github](https://github.com/zhiyelee/gistview)
-        
-
-
+            .share
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="zhiyelee" data-hashtags="gistview">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
