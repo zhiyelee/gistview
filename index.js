@@ -14,7 +14,8 @@ app.set('view engine', 'jade');
 app.use(express.static(__dirname + "/static"));
 
 
-marked = utils.getMarked();
+var siteConfig = utils.loadConfig();
+var marked = utils.getMarked();
 
 app.get('/:gistid([0-9a-zA-Z]*)', function(req, res){
     var gistId = req.params.gistid;
@@ -44,7 +45,7 @@ app.get('/:gistid([0-9a-zA-Z]*)', function(req, res){
 });
 
 app.get('*', function(req, res){
-        res.render('index');
+        res.render('index', {siteUrl: siteConfig.siteUrl});
 });
 
-app.listen(3000);
+app.listen(siteConfig.port);
