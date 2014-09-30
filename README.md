@@ -1,4 +1,10 @@
-# gistview
+# Deprecated.  
+
+I have developed  another similiar application based on AngularJS. [gView](https://github.com/zhiyelee/gview) 
+
+
+
+## gistview
 
 View markdown files of your gists.
 
